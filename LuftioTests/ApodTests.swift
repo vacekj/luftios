@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Apod
+@testable import Luftio
 
 class ApodTests: XCTestCase {
 

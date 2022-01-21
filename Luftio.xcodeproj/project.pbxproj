@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE87F62A259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */; };
 		DE87F62B259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */; };
-		DEA243BE257F45A9002568DE /* ApodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243BD257F45A9002568DE /* ApodApp.swift */; };
+		DEA243BE257F45A9002568DE /* LuftioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243BD257F45A9002568DE /* LuftioApp.swift */; };
 		DEA243C0257F45A9002568DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243BF257F45A9002568DE /* ContentView.swift */; };
 		DEA243C2257F45AA002568DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA243C1257F45AA002568DE /* Assets.xcassets */; };
 		DEA243C5257F45AA002568DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA243C4257F45AA002568DE /* Preview Assets.xcassets */; };
@@ -17,13 +17,13 @@
 		DEA243DB257F45AB002568DE /* ApodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243DA257F45AB002568DE /* ApodUITests.swift */; };
 		DEA243F2257F45B8002568DE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA243F1257F45B8002568DE /* WidgetKit.framework */; };
 		DEA243F4257F45B8002568DE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA243F3257F45B8002568DE /* SwiftUI.framework */; };
-		DEA243F7257F45B8002568DE /* ApodWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243F6257F45B8002568DE /* ApodWidget.swift */; };
+		DEA243F7257F45B8002568DE /* LuftioWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243F6257F45B8002568DE /* LuftioWidget.swift */; };
 		DEA243FA257F45B8002568DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA243F9257F45B8002568DE /* Assets.xcassets */; };
-		DEA24400257F45B8002568DE /* ApodWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEA243EF257F45B7002568DE /* ApodWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DEA24400257F45B8002568DE /* LuftioWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEA243EF257F45B7002568DE /* LuftioWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DEA2440D257F4710002568DE /* Test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEA2440A257F4710002568DE /* Test.jpg */; };
 		DEA2440E257F4710002568DE /* Error.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA2440B257F4710002568DE /* Error.png */; };
 		DEA2440F257F4710002568DE /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA2440C257F4710002568DE /* Placeholder.png */; };
-		DEA24415257F4816002568DE /* ApodImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA24414257F4816002568DE /* ApodImageProvider.swift */; };
+		DEA24415257F4816002568DE /* LuftioAirQualityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA24414257F4816002568DE /* LuftioAirQualityProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DEA24400257F45B8002568DE /* ApodWidgetExtension.appex in Embed App Extensions */,
+				DEA24400257F45B8002568DE /* LuftioWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,28 +66,28 @@
 
 /* Begin PBXFileReference section */
 		DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ApodWidgetConfiguration.intentdefinition; sourceTree = "<group>"; };
-		DEA243BA257F45A9002568DE /* Apod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apod.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEA243BD257F45A9002568DE /* ApodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodApp.swift; sourceTree = "<group>"; };
+		DEA243BA257F45A9002568DE /* Luftio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luftio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA243BD257F45A9002568DE /* LuftioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioApp.swift; sourceTree = "<group>"; };
 		DEA243BF257F45A9002568DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEA243C1257F45AA002568DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA243C4257F45AA002568DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DEA243C6257F45AA002568DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEA243CB257F45AB002568DE /* ApodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA243CB257F45AB002568DE /* LuftioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuftioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA243CF257F45AB002568DE /* ApodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodTests.swift; sourceTree = "<group>"; };
 		DEA243D1257F45AB002568DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEA243D6257F45AB002568DE /* ApodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA243D6257F45AB002568DE /* LuftioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuftioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA243DA257F45AB002568DE /* ApodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodUITests.swift; sourceTree = "<group>"; };
 		DEA243DC257F45AB002568DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEA243EF257F45B7002568DE /* ApodWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ApodWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA243EF257F45B7002568DE /* LuftioWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LuftioWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA243F1257F45B8002568DE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		DEA243F3257F45B8002568DE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		DEA243F6257F45B8002568DE /* ApodWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodWidget.swift; sourceTree = "<group>"; };
+		DEA243F6257F45B8002568DE /* LuftioWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioWidget.swift; sourceTree = "<group>"; };
 		DEA243F9257F45B8002568DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA243FB257F45B8002568DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA2440A257F4710002568DE /* Test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test.jpg; sourceTree = "<group>"; };
 		DEA2440B257F4710002568DE /* Error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Error.png; sourceTree = "<group>"; };
 		DEA2440C257F4710002568DE /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
-		DEA24414257F4816002568DE /* ApodImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodImageProvider.swift; sourceTree = "<group>"; };
+		DEA24414257F4816002568DE /* LuftioAirQualityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioAirQualityProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +127,10 @@
 		DEA243B1257F45A9002568DE = {
 			isa = PBXGroup;
 			children = (
-				DEA243BC257F45A9002568DE /* Apod */,
-				DEA243CE257F45AB002568DE /* ApodTests */,
-				DEA243D9257F45AB002568DE /* ApodUITests */,
-				DEA243F5257F45B8002568DE /* ApodWidget */,
+				DEA243BC257F45A9002568DE /* Luftio */,
+				DEA243CE257F45AB002568DE /* LuftioTests */,
+				DEA243D9257F45AB002568DE /* LuftioUITests */,
+				DEA243F5257F45B8002568DE /* LuftioWidget */,
 				DEA243F0257F45B8002568DE /* Frameworks */,
 				DEA243BB257F45A9002568DE /* Products */,
 			);
@@ -139,24 +139,24 @@
 		DEA243BB257F45A9002568DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEA243BA257F45A9002568DE /* Apod.app */,
-				DEA243CB257F45AB002568DE /* ApodTests.xctest */,
-				DEA243D6257F45AB002568DE /* ApodUITests.xctest */,
-				DEA243EF257F45B7002568DE /* ApodWidgetExtension.appex */,
+				DEA243BA257F45A9002568DE /* Luftio.app */,
+				DEA243CB257F45AB002568DE /* LuftioTests.xctest */,
+				DEA243D6257F45AB002568DE /* LuftioUITests.xctest */,
+				DEA243EF257F45B7002568DE /* LuftioWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEA243BC257F45A9002568DE /* Apod */ = {
+		DEA243BC257F45A9002568DE /* Luftio */ = {
 			isa = PBXGroup;
 			children = (
-				DEA243BD257F45A9002568DE /* ApodApp.swift */,
+				DEA243BD257F45A9002568DE /* LuftioApp.swift */,
 				DEA243BF257F45A9002568DE /* ContentView.swift */,
 				DEA243C1257F45AA002568DE /* Assets.xcassets */,
 				DEA243C6257F45AA002568DE /* Info.plist */,
 				DEA243C3257F45AA002568DE /* Preview Content */,
 			);
-			path = Apod;
+			path = Luftio;
 			sourceTree = "<group>";
 		};
 		DEA243C3257F45AA002568DE /* Preview Content */ = {
@@ -167,22 +167,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DEA243CE257F45AB002568DE /* ApodTests */ = {
+		DEA243CE257F45AB002568DE /* LuftioTests */ = {
 			isa = PBXGroup;
 			children = (
 				DEA243CF257F45AB002568DE /* ApodTests.swift */,
 				DEA243D1257F45AB002568DE /* Info.plist */,
 			);
-			path = ApodTests;
+			path = LuftioTests;
 			sourceTree = "<group>";
 		};
-		DEA243D9257F45AB002568DE /* ApodUITests */ = {
+		DEA243D9257F45AB002568DE /* LuftioUITests */ = {
 			isa = PBXGroup;
 			children = (
 				DEA243DA257F45AB002568DE /* ApodUITests.swift */,
 				DEA243DC257F45AB002568DE /* Info.plist */,
 			);
-			path = ApodUITests;
+			path = LuftioUITests;
 			sourceTree = "<group>";
 		};
 		DEA243F0257F45B8002568DE /* Frameworks */ = {
@@ -194,17 +194,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DEA243F5257F45B8002568DE /* ApodWidget */ = {
+		DEA243F5257F45B8002568DE /* LuftioWidget */ = {
 			isa = PBXGroup;
 			children = (
 				DEA24409257F4708002568DE /* Assets */,
-				DEA243F6257F45B8002568DE /* ApodWidget.swift */,
+				DEA243F6257F45B8002568DE /* LuftioWidget.swift */,
 				DEA243F9257F45B8002568DE /* Assets.xcassets */,
 				DEA243FB257F45B8002568DE /* Info.plist */,
-				DEA24414257F4816002568DE /* ApodImageProvider.swift */,
+				DEA24414257F4816002568DE /* LuftioAirQualityProvider.swift */,
 				DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */,
 			);
-			path = ApodWidget;
+			path = LuftioWidget;
 			sourceTree = "<group>";
 		};
 		DEA24409257F4708002568DE /* Assets */ = {
@@ -220,9 +220,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEA243B9257F45A9002568DE /* Apod */ = {
+		DEA243B9257F45A9002568DE /* Luftio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEA243DF257F45AB002568DE /* Build configuration list for PBXNativeTarget "Apod" */;
+			buildConfigurationList = DEA243DF257F45AB002568DE /* Build configuration list for PBXNativeTarget "Luftio" */;
 			buildPhases = (
 				DEA243B6257F45A9002568DE /* Sources */,
 				DEA243B7257F45A9002568DE /* Frameworks */,
@@ -234,14 +234,14 @@
 			dependencies = (
 				DEA243FF257F45B8002568DE /* PBXTargetDependency */,
 			);
-			name = Apod;
+			name = Luftio;
 			productName = Apod;
-			productReference = DEA243BA257F45A9002568DE /* Apod.app */;
+			productReference = DEA243BA257F45A9002568DE /* Luftio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DEA243CA257F45AB002568DE /* ApodTests */ = {
+		DEA243CA257F45AB002568DE /* LuftioTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEA243E2257F45AB002568DE /* Build configuration list for PBXNativeTarget "ApodTests" */;
+			buildConfigurationList = DEA243E2257F45AB002568DE /* Build configuration list for PBXNativeTarget "LuftioTests" */;
 			buildPhases = (
 				DEA243C7257F45AB002568DE /* Sources */,
 				DEA243C8257F45AB002568DE /* Frameworks */,
@@ -252,14 +252,14 @@
 			dependencies = (
 				DEA243CD257F45AB002568DE /* PBXTargetDependency */,
 			);
-			name = ApodTests;
+			name = LuftioTests;
 			productName = ApodTests;
-			productReference = DEA243CB257F45AB002568DE /* ApodTests.xctest */;
+			productReference = DEA243CB257F45AB002568DE /* LuftioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DEA243D5257F45AB002568DE /* ApodUITests */ = {
+		DEA243D5257F45AB002568DE /* LuftioUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEA243E5257F45AB002568DE /* Build configuration list for PBXNativeTarget "ApodUITests" */;
+			buildConfigurationList = DEA243E5257F45AB002568DE /* Build configuration list for PBXNativeTarget "LuftioUITests" */;
 			buildPhases = (
 				DEA243D2257F45AB002568DE /* Sources */,
 				DEA243D3257F45AB002568DE /* Frameworks */,
@@ -270,14 +270,14 @@
 			dependencies = (
 				DEA243D8257F45AB002568DE /* PBXTargetDependency */,
 			);
-			name = ApodUITests;
+			name = LuftioUITests;
 			productName = ApodUITests;
-			productReference = DEA243D6257F45AB002568DE /* ApodUITests.xctest */;
+			productReference = DEA243D6257F45AB002568DE /* LuftioUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		DEA243EE257F45B7002568DE /* ApodWidgetExtension */ = {
+		DEA243EE257F45B7002568DE /* LuftioWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEA24401257F45B8002568DE /* Build configuration list for PBXNativeTarget "ApodWidgetExtension" */;
+			buildConfigurationList = DEA24401257F45B8002568DE /* Build configuration list for PBXNativeTarget "LuftioWidgetExtension" */;
 			buildPhases = (
 				DEA243EB257F45B7002568DE /* Sources */,
 				DEA243EC257F45B7002568DE /* Frameworks */,
@@ -287,9 +287,9 @@
 			);
 			dependencies = (
 			);
-			name = ApodWidgetExtension;
+			name = LuftioWidgetExtension;
 			productName = ApodWidgetExtension;
-			productReference = DEA243EF257F45B7002568DE /* ApodWidgetExtension.appex */;
+			productReference = DEA243EF257F45B7002568DE /* LuftioWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -317,7 +317,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DEA243B5257F45A9002568DE /* Build configuration list for PBXProject "Apod" */;
+			buildConfigurationList = DEA243B5257F45A9002568DE /* Build configuration list for PBXProject "Luftio" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -330,10 +330,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEA243B9257F45A9002568DE /* Apod */,
-				DEA243CA257F45AB002568DE /* ApodTests */,
-				DEA243D5257F45AB002568DE /* ApodUITests */,
-				DEA243EE257F45B7002568DE /* ApodWidgetExtension */,
+				DEA243B9257F45A9002568DE /* Luftio */,
+				DEA243CA257F45AB002568DE /* LuftioTests */,
+				DEA243D5257F45AB002568DE /* LuftioUITests */,
+				DEA243EE257F45B7002568DE /* LuftioWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -381,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA243C0257F45A9002568DE /* ContentView.swift in Sources */,
-				DEA243BE257F45A9002568DE /* ApodApp.swift in Sources */,
+				DEA243BE257F45A9002568DE /* LuftioApp.swift in Sources */,
 				DE87F62A259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,8 +406,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA243F7257F45B8002568DE /* ApodWidget.swift in Sources */,
-				DEA24415257F4816002568DE /* ApodImageProvider.swift in Sources */,
+				DEA243F7257F45B8002568DE /* LuftioWidget.swift in Sources */,
+				DEA24415257F4816002568DE /* LuftioAirQualityProvider.swift in Sources */,
 				DE87F62B259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,17 +417,17 @@
 /* Begin PBXTargetDependency section */
 		DEA243CD257F45AB002568DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DEA243B9257F45A9002568DE /* Apod */;
+			target = DEA243B9257F45A9002568DE /* Luftio */;
 			targetProxy = DEA243CC257F45AB002568DE /* PBXContainerItemProxy */;
 		};
 		DEA243D8257F45AB002568DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DEA243B9257F45A9002568DE /* Apod */;
+			target = DEA243B9257F45A9002568DE /* Luftio */;
 			targetProxy = DEA243D7257F45AB002568DE /* PBXContainerItemProxy */;
 		};
 		DEA243FF257F45B8002568DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DEA243EE257F45B7002568DE /* ApodWidgetExtension */;
+			target = DEA243EE257F45B7002568DE /* LuftioWidgetExtension */;
 			targetProxy = DEA243FE257F45B8002568DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -484,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -539,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -556,15 +556,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Apod/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = KLP8YT88BM;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Apod/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_FILE = "$(SRCROOT)/Luftio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SchwiftyUI.Apod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luftioios.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,15 +579,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Apod/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = KLP8YT88BM;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Apod/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				INFOPLIST_FILE = "$(SRCROOT)/Luftio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SchwiftyUI.Apod;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luftioios.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -599,6 +601,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLP8YT88BM;
 				INFOPLIST_FILE = ApodTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,7 +613,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Apod.app/Apod";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luftio.app/Luftio";
 			};
 			name = Debug;
 		};
@@ -620,6 +623,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLP8YT88BM;
 				INFOPLIST_FILE = ApodTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -631,7 +635,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Apod.app/Apod";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luftio.app/Luftio";
 			};
 			name = Release;
 		};
@@ -640,6 +644,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLP8YT88BM;
 				INFOPLIST_FILE = ApodUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -659,6 +664,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KLP8YT88BM;
 				INFOPLIST_FILE = ApodUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -679,13 +685,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ApodWidget/Info.plist;
+				DEVELOPMENT_TEAM = KLP8YT88BM;
+				INFOPLIST_FILE = LuftioWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SchwiftyUI.Apod.ApodWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luftioios.app.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -699,13 +706,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ApodWidget/Info.plist;
+				DEVELOPMENT_TEAM = KLP8YT88BM;
+				INFOPLIST_FILE = LuftioWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SchwiftyUI.Apod.ApodWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luftioios.app.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -716,7 +724,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEA243B5257F45A9002568DE /* Build configuration list for PBXProject "Apod" */ = {
+		DEA243B5257F45A9002568DE /* Build configuration list for PBXProject "Luftio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA243DD257F45AB002568DE /* Debug */,
@@ -725,7 +733,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEA243DF257F45AB002568DE /* Build configuration list for PBXNativeTarget "Apod" */ = {
+		DEA243DF257F45AB002568DE /* Build configuration list for PBXNativeTarget "Luftio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA243E0257F45AB002568DE /* Debug */,
@@ -734,7 +742,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEA243E2257F45AB002568DE /* Build configuration list for PBXNativeTarget "ApodTests" */ = {
+		DEA243E2257F45AB002568DE /* Build configuration list for PBXNativeTarget "LuftioTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA243E3257F45AB002568DE /* Debug */,
@@ -743,7 +751,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEA243E5257F45AB002568DE /* Build configuration list for PBXNativeTarget "ApodUITests" */ = {
+		DEA243E5257F45AB002568DE /* Build configuration list for PBXNativeTarget "LuftioUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA243E6257F45AB002568DE /* Debug */,
@@ -752,7 +760,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEA24401257F45B8002568DE /* Build configuration list for PBXNativeTarget "ApodWidgetExtension" */ = {
+		DEA24401257F45B8002568DE /* Build configuration list for PBXNativeTarget "LuftioWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA24402257F45B8002568DE /* Debug */,

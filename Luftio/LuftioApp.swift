@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ApodApp: App {
+struct LuftioApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

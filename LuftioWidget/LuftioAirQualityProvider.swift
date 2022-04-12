@@ -29,7 +29,8 @@ class LuftioAirQualityProvider {
         
         let url = URL(string: urlString)!
         var urlRequest = URLRequest(url: url)
-        urlRequest.addValue("Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ2YWNla2pAb3V0bG9vay5jb20iLCJzY29wZXMiOlsiQ1VTVE9NRVJfVVNFUiJdLCJ1c2VySWQiOiIxZjE3ZmRhMC00MmU2LTExZWMtYWYxNS01ZmQ3NTNkYThhMTQiLCJmaXJzdE5hbWUiOiJKb3NlZiIsImxhc3ROYW1lIjoiVmFjZWsiLCJlbmFibGVkIjp0cnVlLCJpc1B1YmxpYyI6ZmFsc2UsInRlbmFudElkIjoiNTFiNzRlNDAtMzI2Ny0xMWViLWJjZmUtMjcwZWU5NDE0ZjFhIiwiY3VzdG9tZXJJZCI6IjE2OTA0ZTMwLTQyZTYtMTFlYy1hZjE1LTVmZDc1M2RhOGExNCIsImlzcyI6InRoaW5nc2JvYXJkLmlvIiwiaWF0IjoxNjQyNTkzNTQ2LCJleHAiOjE2NDc0MzE5NDZ9.Ea8-mwMH0oHNUEDBGdQptDdTwWxGK-ljMfXr7UTlRU1pkbmLTlL1d0Kx3qATnKQzqJxbx2j0jO7qWkKrW2ZQqA", forHTTPHeaderField: "X-Authorization")
+        let token = UserDefaults(suiteName: "group.vacekj")!.string(forKey: "web_token")
+        urlRequest.addValue("Bearer \(token!)", forHTTPHeaderField: "X-Authorization")
         let task = URLSession.shared.dataTask(with: urlRequest) { data, urlResponse, error in
             parseResponseAndGetValue(data: data, urlResponse: urlResponse, error: error, completion: completion)
         }
@@ -49,7 +50,7 @@ class LuftioAirQualityProvider {
             apiresponse = try JSONDecoder().decode(Response.self, from: content)
         } catch {
             print(error)
-            print("error parsing URL from data")
+            print("error parsing data from response")
             let response = LuftioAirQualityCallResponse.Failure
             completion?(response)
             return

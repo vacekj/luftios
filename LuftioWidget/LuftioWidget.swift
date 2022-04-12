@@ -27,7 +27,7 @@ struct LuftioTimelineProvider: IntentTimelineProvider {
 
             switch apodImageResponse {
             case .Failure:
-                entry = ApodTimelineEntry(date: Date(), value: 69)
+                entry = ApodTimelineEntry(date: Date(), value: 0)
                 policy = .after(Calendar.current.date(byAdding: .minute, value: 1, to: Date())!)
             case .Success(let value, let timestamp):
                 entry = ApodTimelineEntry(date: timestamp, value: value)
@@ -49,17 +49,23 @@ struct ApodTimelineEntry: TimelineEntry {
 
 struct ApodWidgetEntryView: View {
     var entry: LuftioTimelineProvider.Entry
-
+    let token = UserDefaults(suiteName: "group.vacekj")!.string(forKey: "web_token")
     var body: some View {
         ZStack {
             Color(.white.toColor(.red, percentage: Double((entry.value - 500) / 10)))
-            VStack {
-                HStack(alignment: .firstTextBaseline, spacing: 2) {
-                    Text("\(entry.value)").font(.title)
-                    Text("ppm").font(.footnote)
+            if token != nil {
+                VStack {
+                    HStack(alignment: .firstTextBaseline, spacing: 2) {
+                        Text("\(entry.value)").font(.title)
+                        Text("ppm").font(.footnote)
+                    }
+                    Text(entry.date.timeAgoDisplay()).font(.footnote)
+                }.foregroundColor(entry.value > 1000 ? .white : .black)
+            } else {
+                VStack {
+                    Text("Set token in app")
                 }
-                Text(entry.date.timeAgoDisplay()).font(.footnote)
-            }.foregroundColor(entry.value > 1000 ? .white : .primary)
+            }
         }
     }
 }

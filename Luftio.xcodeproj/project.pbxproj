@@ -65,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD863DE62805708F00FDD27A /* LuftioWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LuftioWidgetExtension.entitlements; sourceTree = "<group>"; };
+		AD863DE7280570A000FDD27A /* Luftio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luftio.entitlements; sourceTree = "<group>"; };
 		DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ApodWidgetConfiguration.intentdefinition; sourceTree = "<group>"; };
 		DEA243BA257F45A9002568DE /* Luftio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luftio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA243BD257F45A9002568DE /* LuftioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioApp.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		DEA243B1257F45A9002568DE = {
 			isa = PBXGroup;
 			children = (
+				AD863DE62805708F00FDD27A /* LuftioWidgetExtension.entitlements */,
 				DEA243BC257F45A9002568DE /* Luftio */,
 				DEA243CE257F45AB002568DE /* LuftioTests */,
 				DEA243D9257F45AB002568DE /* LuftioUITests */,
@@ -150,6 +153,7 @@
 		DEA243BC257F45A9002568DE /* Luftio */ = {
 			isa = PBXGroup;
 			children = (
+				AD863DE7280570A000FDD27A /* Luftio.entitlements */,
 				DEA243BD257F45A9002568DE /* LuftioApp.swift */,
 				DEA243BF257F45A9002568DE /* ContentView.swift */,
 				DEA243C1257F45AA002568DE /* Assets.xcassets */,
@@ -555,6 +559,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Luftio/Luftio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = KLP8YT88BM;
@@ -578,6 +583,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Luftio/Luftio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = KLP8YT88BM;
@@ -684,6 +690,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LuftioWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KLP8YT88BM;
 				INFOPLIST_FILE = LuftioWidget/Info.plist;
@@ -705,6 +712,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LuftioWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KLP8YT88BM;
 				INFOPLIST_FILE = LuftioWidget/Info.plist;

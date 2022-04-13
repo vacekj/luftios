@@ -49,23 +49,16 @@ struct ApodTimelineEntry: TimelineEntry {
 
 struct ApodWidgetEntryView: View {
     var entry: LuftioTimelineProvider.Entry
-    let token = UserDefaults(suiteName: "group.vacekj")!.string(forKey: "web_token")
     var body: some View {
         ZStack {
             Color(.white.toColor(.red, percentage: Double((entry.value - 500) / 10)))
-            if token != nil {
-                VStack {
-                    HStack(alignment: .firstTextBaseline, spacing: 2) {
-                        Text("\(entry.value)").font(.title)
-                        Text("ppm").font(.footnote)
-                    }
-                    Text(entry.date.timeAgoDisplay()).font(.footnote)
-                }.foregroundColor(entry.value > 1000 ? .white : .black)
-            } else {
-                VStack {
-                    Text("Set token in app")
+            VStack {
+                HStack(alignment: .firstTextBaseline, spacing: 2) {
+                    Text("\(entry.value)").font(.title)
+                    Text("ppm").font(.footnote)
                 }
-            }
+                Text(entry.date.timeAgoDisplay()).font(.footnote)
+            }.foregroundColor(entry.value > 1000 ? .white : .black)
         }
     }
 }

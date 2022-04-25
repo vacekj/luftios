@@ -58,8 +58,19 @@ struct ContentView: View {
                     .id(chartData.id)
                     .frame(minWidth: 150, maxWidth: 900, minHeight: 150, idealHeight: 300, maxHeight: 400, alignment: .center)
                     .padding(.horizontal)
+                Button("Refresh") {
+                    try? LuftioAirQualityProvider.getTimeSeriesFromApi(from: Calendar.current.date(byAdding: .day, value: -30, to: Date.now)!, to: Date.now) { res in
+                        switch res {
+                        case .Success(let timeseries):
+                            data = timeseries
+                            chartData = weekOfData(res: data)
+                        case .Failure:
+                            print("fail")
+                        }
+                    }
+                }
             }.refreshable {
-                LuftioAirQualityProvider.getTimeSeriesFromApi(from: Calendar.current.date(byAdding: .day, value: -3, to: Date.now)!, to: Date.now) { res in
+                try! LuftioAirQualityProvider.getTimeSeriesFromApi(from: Calendar.current.date(byAdding: .day, value: -30, to: Date.now)!, to: Date.now) { res in
                     switch res {
                     case .Success(let timeseries):
                         data = timeseries
@@ -76,7 +87,7 @@ struct ContentView: View {
                     Image(systemName: "gear")
                 }
             }.onAppear {
-                LuftioAirQualityProvider.getTimeSeriesFromApi(from: Calendar.current.date(byAdding: .day, value: -3, to: Date.now)!, to: Date.now) { res in
+                try? LuftioAirQualityProvider.getTimeSeriesFromApi(from: Calendar.current.date(byAdding: .day, value: -3, to: Date.now)!, to: Date.now) { res in
                     switch res {
                     case .Success(let timeseries):
                         data = timeseries
@@ -86,7 +97,7 @@ struct ContentView: View {
                     }
                 }
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

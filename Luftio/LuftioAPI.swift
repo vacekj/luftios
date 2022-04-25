@@ -26,6 +26,10 @@ struct Co2: Codable {
     let value: String
 }
 
+enum LuftioApiError: Error {
+    case tokenNotFound
+}
+
 class LuftioAirQualityProvider {
     static func getValueFromApi( completion: ((LuftioAirQualityCallResponse) -> Void)?) {
         let device_id = "d227a410-2c28-11ec-af15-5fd753da8a14"
@@ -43,15 +47,17 @@ class LuftioAirQualityProvider {
         task.resume()
     }
     
-    static func getTimeSeriesFromApi(from: Date, to: Date, completion: ((LuftioAirQualityTimeseries) -> Void)?) {
-        let from_ms = Int(from.timeIntervalSince1970 * 1000);
+    static func getTimeSeriesFromApi(from: Date, to: Date, completion: ((LuftioAirQualityTimeseries) -> Void)?) throws {
         let to_ms = Int(to.timeIntervalSince1970 * 1000);
         let device_id = "d227a410-2c28-11ec-af15-5fd753da8a14"
-        let urlString = "https://app.luftio.com/tb/api/plugins/telemetry/DEVICE/\(device_id)/values/timeseries?keys=co2,tvoc&startTs=\(from_ms)&endTs=\(to_ms)"
+        let urlString = "https://app.luftio.com/tb/api/plugins/telemetry/DEVICE/\(device_id)/values/timeseries?keys=co2,tvoc&startTs=0&endTs=\(to_ms)&limit=1000"
         
         let url = URL(string: urlString)!
         var urlRequest = URLRequest(url: url)
         let token = UserDefaults(suiteName: "group.vacekj")!.string(forKey: "web_token")
+        if token == nil {
+            throw LuftioApiError.tokenNotFound
+        }
         urlRequest.addValue("Bearer \(token!)", forHTTPHeaderField: "X-Authorization")
         let task = URLSession.shared.dataTask(with: urlRequest) { data, urlResponse, error in
             parseResponseAndGetTimeseriesData(data: data, urlResponse: urlResponse, error: error, completion: completion)

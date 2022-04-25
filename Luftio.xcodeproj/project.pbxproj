@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD5C9F1D2816F1BA00026DEA /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = AD5C9F1C2816F1BA00026DEA /* SwiftUICharts */; };
 		AD863DEC28057E8600FDD27A /* LuftioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD863DEB28057E8600FDD27A /* LuftioAPI.swift */; };
 		AD863DED28057F6200FDD27A /* LuftioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD863DEB28057E8600FDD27A /* LuftioAPI.swift */; };
-		AD863DF5280598AA00FDD27A /* ChartTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD863DF4280598AA00FDD27A /* ChartTestView.swift */; };
 		AD9C4B68281705CC00727DD8 /* LuftioMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B67281705CC00727DD8 /* LuftioMacApp.swift */; };
 		AD9C4B6A281705CC00727DD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B69281705CC00727DD8 /* ContentView.swift */; };
 		AD9C4B6C281705CD00727DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9C4B6B281705CD00727DD8 /* Assets.xcassets */; };
@@ -18,8 +16,8 @@
 		AD9C4B7A281705CD00727DD8 /* LuftioMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B79281705CD00727DD8 /* LuftioMacTests.swift */; };
 		AD9C4B84281705CD00727DD8 /* LuftioMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B83281705CD00727DD8 /* LuftioMacUITests.swift */; };
 		AD9C4B86281705CD00727DD8 /* LuftioMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B85281705CD00727DD8 /* LuftioMacUITestsLaunchTests.swift */; };
-		AD9C4B91281705DE00727DD8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = AD9C4B90281705DE00727DD8 /* SwiftUICharts */; };
 		AD9C4B92281705FC00727DD8 /* Luftio.app in Resources */ = {isa = PBXBuildFile; fileRef = DEA243BA257F45A9002568DE /* Luftio.app */; };
+		AD9C4B992817082200727DD8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = AD9C4B982817082200727DD8 /* SwiftUICharts */; };
 		DE87F62A259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */; };
 		DE87F62B259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */; };
 		DEA243BE257F45A9002568DE /* LuftioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243BD257F45A9002568DE /* LuftioApp.swift */; };
@@ -108,7 +106,6 @@
 		AD863DE62805708F00FDD27A /* LuftioWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LuftioWidgetExtension.entitlements; sourceTree = "<group>"; };
 		AD863DE7280570A000FDD27A /* Luftio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luftio.entitlements; sourceTree = "<group>"; };
 		AD863DEB28057E8600FDD27A /* LuftioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioAPI.swift; sourceTree = "<group>"; };
-		AD863DF4280598AA00FDD27A /* ChartTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTestView.swift; sourceTree = "<group>"; };
 		AD9C4B65281705CC00727DD8 /* LuftioMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuftioMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9C4B67281705CC00727DD8 /* LuftioMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioMacApp.swift; sourceTree = "<group>"; };
 		AD9C4B69281705CC00727DD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9C4B91281705DE00727DD8 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD5C9F1D2816F1BA00026DEA /* SwiftUICharts in Frameworks */,
+				AD9C4B992817082200727DD8 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +270,6 @@
 				AD863DE7280570A000FDD27A /* Luftio.entitlements */,
 				DEA243BD257F45A9002568DE /* LuftioApp.swift */,
 				DEA243BF257F45A9002568DE /* ContentView.swift */,
-				AD863DF4280598AA00FDD27A /* ChartTestView.swift */,
 				DEA243C1257F45AA002568DE /* Assets.xcassets */,
 				DEA243C6257F45AA002568DE /* Info.plist */,
 				DEA243C3257F45AA002568DE /* Preview Content */,
@@ -359,7 +354,6 @@
 			);
 			name = LuftioMac;
 			packageProductDependencies = (
-				AD9C4B90281705DE00727DD8 /* SwiftUICharts */,
 			);
 			productName = LuftioMac;
 			productReference = AD9C4B65281705CC00727DD8 /* LuftioMac.app */;
@@ -417,7 +411,7 @@
 			);
 			name = Luftio;
 			packageProductDependencies = (
-				AD5C9F1C2816F1BA00026DEA /* SwiftUICharts */,
+				AD9C4B982817082200727DD8 /* SwiftUICharts */,
 			);
 			productName = Apod;
 			productReference = DEA243BA257F45A9002568DE /* Luftio.app */;
@@ -522,7 +516,7 @@
 			);
 			mainGroup = DEA243B1257F45A9002568DE;
 			packageReferences = (
-				AD863DF12805901E00FDD27A /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				AD9C4B972817082200727DD8 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = DEA243BB257F45A9002568DE /* Products */;
 			projectDirPath = "";
@@ -633,7 +627,6 @@
 			files = (
 				DEA243C0257F45A9002568DE /* ContentView.swift in Sources */,
 				DEA243BE257F45A9002568DE /* LuftioApp.swift in Sources */,
-				AD863DF5280598AA00FDD27A /* ChartTestView.swift in Sources */,
 				DE87F62A259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */,
 				AD863DEC28057E8600FDD27A /* LuftioAPI.swift in Sources */,
 			);
@@ -1218,25 +1211,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AD863DF12805901E00FDD27A /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+		AD9C4B972817082200727DD8 /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			repositoryURL = "https://github.com/AppPear/ChartView";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AD5C9F1C2816F1BA00026DEA /* SwiftUICharts */ = {
+		AD9C4B982817082200727DD8 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AD863DF12805901E00FDD27A /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
-			productName = SwiftUICharts;
-		};
-		AD9C4B90281705DE00727DD8 /* SwiftUICharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AD863DF12805901E00FDD27A /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			package = AD9C4B972817082200727DD8 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */

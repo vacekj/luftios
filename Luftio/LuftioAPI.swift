@@ -50,7 +50,7 @@ class LuftioAirQualityProvider {
     static func getTimeSeriesFromApi(from: Date, to: Date, completion: ((LuftioAirQualityTimeseries) -> Void)?) throws {
         let to_ms = Int(to.timeIntervalSince1970 * 1000);
         let device_id = "d227a410-2c28-11ec-af15-5fd753da8a14"
-        let urlString = "https://app.luftio.com/tb/api/plugins/telemetry/DEVICE/\(device_id)/values/timeseries?keys=co2,tvoc&startTs=0&endTs=\(to_ms)&limit=1000"
+        let urlString = "https://app.luftio.com/tb/api/plugins/telemetry/DEVICE/\(device_id)/values/timeseries?keys=co2,tvoc&startTs=0&endTs=\(to_ms)&limit=100"
         
         let url = URL(string: urlString)!
         var urlRequest = URLRequest(url: url)

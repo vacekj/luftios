@@ -9,15 +9,12 @@
 /* Begin PBXBuildFile section */
 		AD863DEC28057E8600FDD27A /* LuftioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD863DEB28057E8600FDD27A /* LuftioAPI.swift */; };
 		AD863DED28057F6200FDD27A /* LuftioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD863DEB28057E8600FDD27A /* LuftioAPI.swift */; };
-		AD9C4B68281705CC00727DD8 /* LuftioMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B67281705CC00727DD8 /* LuftioMacApp.swift */; };
-		AD9C4B6A281705CC00727DD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B69281705CC00727DD8 /* ContentView.swift */; };
-		AD9C4B6C281705CD00727DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9C4B6B281705CD00727DD8 /* Assets.xcassets */; };
-		AD9C4B6F281705CD00727DD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9C4B6E281705CD00727DD8 /* Preview Assets.xcassets */; };
-		AD9C4B7A281705CD00727DD8 /* LuftioMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B79281705CD00727DD8 /* LuftioMacTests.swift */; };
-		AD9C4B84281705CD00727DD8 /* LuftioMacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B83281705CD00727DD8 /* LuftioMacUITests.swift */; };
-		AD9C4B86281705CD00727DD8 /* LuftioMacUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9C4B85281705CD00727DD8 /* LuftioMacUITestsLaunchTests.swift */; };
-		AD9C4B92281705FC00727DD8 /* Luftio.app in Resources */ = {isa = PBXBuildFile; fileRef = DEA243BA257F45A9002568DE /* Luftio.app */; };
 		AD9C4B992817082200727DD8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = AD9C4B982817082200727DD8 /* SwiftUICharts */; };
+		ADEBCAB92826B8B400782462 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = ADEBCAB82826B8B400782462 /* Apollo */; };
+		ADEBCABC2826B8FE00782462 /* User.graphql in Resources */ = {isa = PBXBuildFile; fileRef = ADEBCABB2826B8FE00782462 /* User.graphql */; };
+		ADEBCABF2826B98700782462 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBCABE2826B98700782462 /* API.swift */; };
+		ADEBCAC12826B99600782462 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBCAC02826B99600782462 /* Network.swift */; };
+		ADEBCAC32826B9C100782462 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBCAC22826B9C100782462 /* UserViewModel.swift */; };
 		DE87F62A259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */; };
 		DE87F62B259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */; };
 		DEA243BE257F45A9002568DE /* LuftioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243BD257F45A9002568DE /* LuftioApp.swift */; };
@@ -37,34 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AD9C4B76281705CD00727DD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEA243B2257F45A9002568DE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD9C4B64281705CC00727DD8;
-			remoteInfo = LuftioMac;
-		};
-		AD9C4B80281705CD00727DD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEA243B2257F45A9002568DE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD9C4B64281705CC00727DD8;
-			remoteInfo = LuftioMac;
-		};
-		AD9C4B93281705FC00727DD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEA243B2257F45A9002568DE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DEA243B9257F45A9002568DE;
-			remoteInfo = Luftio;
-		};
-		AD9C4B952817060000727DD8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DEA243B2257F45A9002568DE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DEA243B9257F45A9002568DE;
-			remoteInfo = Luftio;
-		};
 		DEA243CC257F45AB002568DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DEA243B2257F45A9002568DE /* Project object */;
@@ -106,17 +75,11 @@
 		AD863DE62805708F00FDD27A /* LuftioWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LuftioWidgetExtension.entitlements; sourceTree = "<group>"; };
 		AD863DE7280570A000FDD27A /* Luftio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luftio.entitlements; sourceTree = "<group>"; };
 		AD863DEB28057E8600FDD27A /* LuftioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioAPI.swift; sourceTree = "<group>"; };
-		AD9C4B65281705CC00727DD8 /* LuftioMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuftioMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD9C4B67281705CC00727DD8 /* LuftioMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioMacApp.swift; sourceTree = "<group>"; };
-		AD9C4B69281705CC00727DD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AD9C4B6B281705CD00727DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AD9C4B6E281705CD00727DD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AD9C4B70281705CD00727DD8 /* LuftioMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LuftioMac.entitlements; sourceTree = "<group>"; };
-		AD9C4B75281705CD00727DD8 /* LuftioMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuftioMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD9C4B79281705CD00727DD8 /* LuftioMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioMacTests.swift; sourceTree = "<group>"; };
-		AD9C4B7F281705CD00727DD8 /* LuftioMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuftioMacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD9C4B83281705CD00727DD8 /* LuftioMacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioMacUITests.swift; sourceTree = "<group>"; };
-		AD9C4B85281705CD00727DD8 /* LuftioMacUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioMacUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADEBCABA2826B8D800782462 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		ADEBCABB2826B8FE00782462 /* User.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = User.graphql; sourceTree = "<group>"; };
+		ADEBCABE2826B98700782462 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		ADEBCAC02826B99600782462 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		ADEBCAC22826B9C100782462 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ApodWidgetConfiguration.intentdefinition; sourceTree = "<group>"; };
 		DEA243BA257F45A9002568DE /* Luftio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luftio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA243BD257F45A9002568DE /* LuftioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioApp.swift; sourceTree = "<group>"; };
@@ -142,32 +105,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AD9C4B62281705CC00727DD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9C4B72281705CD00727DD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9C4B7C281705CD00727DD8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DEA243B7257F45A9002568DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AD9C4B992817082200727DD8 /* SwiftUICharts in Frameworks */,
+				ADEBCAB92826B8B400782462 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,43 +140,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD9C4B66281705CC00727DD8 /* LuftioMac */ = {
-			isa = PBXGroup;
-			children = (
-				AD9C4B67281705CC00727DD8 /* LuftioMacApp.swift */,
-				AD9C4B69281705CC00727DD8 /* ContentView.swift */,
-				AD9C4B6B281705CD00727DD8 /* Assets.xcassets */,
-				AD9C4B70281705CD00727DD8 /* LuftioMac.entitlements */,
-				AD9C4B6D281705CD00727DD8 /* Preview Content */,
-			);
-			path = LuftioMac;
-			sourceTree = "<group>";
-		};
-		AD9C4B6D281705CD00727DD8 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				AD9C4B6E281705CD00727DD8 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		AD9C4B78281705CD00727DD8 /* LuftioMacTests */ = {
-			isa = PBXGroup;
-			children = (
-				AD9C4B79281705CD00727DD8 /* LuftioMacTests.swift */,
-			);
-			path = LuftioMacTests;
-			sourceTree = "<group>";
-		};
-		AD9C4B82281705CD00727DD8 /* LuftioMacUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AD9C4B83281705CD00727DD8 /* LuftioMacUITests.swift */,
-				AD9C4B85281705CD00727DD8 /* LuftioMacUITestsLaunchTests.swift */,
-			);
-			path = LuftioMacUITests;
-			sourceTree = "<group>";
-		};
 		DEA243B1257F45A9002568DE = {
 			isa = PBXGroup;
 			children = (
@@ -242,9 +148,6 @@
 				DEA243CE257F45AB002568DE /* LuftioTests */,
 				DEA243D9257F45AB002568DE /* LuftioUITests */,
 				DEA243F5257F45B8002568DE /* LuftioWidget */,
-				AD9C4B66281705CC00727DD8 /* LuftioMac */,
-				AD9C4B78281705CD00727DD8 /* LuftioMacTests */,
-				AD9C4B82281705CD00727DD8 /* LuftioMacUITests */,
 				DEA243F0257F45B8002568DE /* Frameworks */,
 				DEA243BB257F45A9002568DE /* Products */,
 			);
@@ -257,9 +160,6 @@
 				DEA243CB257F45AB002568DE /* LuftioTests.xctest */,
 				DEA243D6257F45AB002568DE /* LuftioUITests.xctest */,
 				DEA243EF257F45B7002568DE /* LuftioWidgetExtension.appex */,
-				AD9C4B65281705CC00727DD8 /* LuftioMac.app */,
-				AD9C4B75281705CD00727DD8 /* LuftioMacTests.xctest */,
-				AD9C4B7F281705CD00727DD8 /* LuftioMacUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,13 +167,18 @@
 		DEA243BC257F45A9002568DE /* Luftio */ = {
 			isa = PBXGroup;
 			children = (
+				ADEBCABA2826B8D800782462 /* schema.json */,
 				AD863DE7280570A000FDD27A /* Luftio.entitlements */,
 				DEA243BD257F45A9002568DE /* LuftioApp.swift */,
 				DEA243BF257F45A9002568DE /* ContentView.swift */,
+				ADEBCABE2826B98700782462 /* API.swift */,
 				DEA243C1257F45AA002568DE /* Assets.xcassets */,
 				DEA243C6257F45AA002568DE /* Info.plist */,
 				DEA243C3257F45AA002568DE /* Preview Content */,
 				AD863DEB28057E8600FDD27A /* LuftioAPI.swift */,
+				ADEBCABB2826B8FE00782462 /* User.graphql */,
+				ADEBCAC02826B99600782462 /* Network.swift */,
+				ADEBCAC22826B9C100782462 /* UserViewModel.swift */,
 			);
 			path = Luftio;
 			sourceTree = "<group>";
@@ -338,67 +243,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD9C4B64281705CC00727DD8 /* LuftioMac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD9C4B8D281705CD00727DD8 /* Build configuration list for PBXNativeTarget "LuftioMac" */;
-			buildPhases = (
-				AD9C4B61281705CC00727DD8 /* Sources */,
-				AD9C4B62281705CC00727DD8 /* Frameworks */,
-				AD9C4B63281705CC00727DD8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD9C4B94281705FC00727DD8 /* PBXTargetDependency */,
-				AD9C4B962817060000727DD8 /* PBXTargetDependency */,
-			);
-			name = LuftioMac;
-			packageProductDependencies = (
-			);
-			productName = LuftioMac;
-			productReference = AD9C4B65281705CC00727DD8 /* LuftioMac.app */;
-			productType = "com.apple.product-type.application";
-		};
-		AD9C4B74281705CD00727DD8 /* LuftioMacTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD9C4B8E281705CD00727DD8 /* Build configuration list for PBXNativeTarget "LuftioMacTests" */;
-			buildPhases = (
-				AD9C4B71281705CD00727DD8 /* Sources */,
-				AD9C4B72281705CD00727DD8 /* Frameworks */,
-				AD9C4B73281705CD00727DD8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD9C4B77281705CD00727DD8 /* PBXTargetDependency */,
-			);
-			name = LuftioMacTests;
-			productName = LuftioMacTests;
-			productReference = AD9C4B75281705CD00727DD8 /* LuftioMacTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AD9C4B7E281705CD00727DD8 /* LuftioMacUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD9C4B8F281705CD00727DD8 /* Build configuration list for PBXNativeTarget "LuftioMacUITests" */;
-			buildPhases = (
-				AD9C4B7B281705CD00727DD8 /* Sources */,
-				AD9C4B7C281705CD00727DD8 /* Frameworks */,
-				AD9C4B7D281705CD00727DD8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD9C4B81281705CD00727DD8 /* PBXTargetDependency */,
-			);
-			name = LuftioMacUITests;
-			productName = LuftioMacUITests;
-			productReference = AD9C4B7F281705CD00727DD8 /* LuftioMacUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		DEA243B9257F45A9002568DE /* Luftio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEA243DF257F45AB002568DE /* Build configuration list for PBXNativeTarget "Luftio" */;
 			buildPhases = (
+				ADEBCABD2826B93300782462 /* Apollo Codegen */,
 				DEA243B6257F45A9002568DE /* Sources */,
 				DEA243B7257F45A9002568DE /* Frameworks */,
 				DEA243B8257F45A9002568DE /* Resources */,
@@ -412,6 +261,7 @@
 			name = Luftio;
 			packageProductDependencies = (
 				AD9C4B982817082200727DD8 /* SwiftUICharts */,
+				ADEBCAB82826B8B400782462 /* Apollo */,
 			);
 			productName = Apod;
 			productReference = DEA243BA257F45A9002568DE /* Luftio.app */;
@@ -477,19 +327,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					AD9C4B64281705CC00727DD8 = {
-						CreatedOnToolsVersion = 13.3.1;
-					};
-					AD9C4B74281705CD00727DD8 = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = AD9C4B64281705CC00727DD8;
-					};
-					AD9C4B7E281705CD00727DD8 = {
-						CreatedOnToolsVersion = 13.3.1;
-						TestTargetID = AD9C4B64281705CC00727DD8;
-					};
 					DEA243B9257F45A9002568DE = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -517,6 +356,7 @@
 			mainGroup = DEA243B1257F45A9002568DE;
 			packageReferences = (
 				AD9C4B972817082200727DD8 /* XCRemoteSwiftPackageReference "ChartView" */,
+				ADEBCAB72826B8B400782462 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = DEA243BB257F45A9002568DE /* Products */;
 			projectDirPath = "";
@@ -526,42 +366,16 @@
 				DEA243CA257F45AB002568DE /* LuftioTests */,
 				DEA243D5257F45AB002568DE /* LuftioUITests */,
 				DEA243EE257F45B7002568DE /* LuftioWidgetExtension */,
-				AD9C4B64281705CC00727DD8 /* LuftioMac */,
-				AD9C4B74281705CD00727DD8 /* LuftioMacTests */,
-				AD9C4B7E281705CD00727DD8 /* LuftioMacUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AD9C4B63281705CC00727DD8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD9C4B6F281705CD00727DD8 /* Preview Assets.xcassets in Resources */,
-				AD9C4B6C281705CD00727DD8 /* Assets.xcassets in Resources */,
-				AD9C4B92281705FC00727DD8 /* Luftio.app in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9C4B73281705CD00727DD8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9C4B7D281705CD00727DD8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DEA243B8257F45A9002568DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEBCABC2826B8FE00782462 /* User.graphql in Resources */,
 				DEA243C5257F45AA002568DE /* Preview Assets.xcassets in Resources */,
 				DEA243C2257F45AA002568DE /* Assets.xcassets in Resources */,
 			);
@@ -594,41 +408,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ADEBCABD2826B93300782462 /* Apollo Codegen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Apollo Codegen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		AD9C4B61281705CC00727DD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD9C4B6A281705CC00727DD8 /* ContentView.swift in Sources */,
-				AD9C4B68281705CC00727DD8 /* LuftioMacApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9C4B71281705CD00727DD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD9C4B7A281705CD00727DD8 /* LuftioMacTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD9C4B7B281705CD00727DD8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD9C4B84281705CD00727DD8 /* LuftioMacUITests.swift in Sources */,
-				AD9C4B86281705CD00727DD8 /* LuftioMacUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DEA243B6257F45A9002568DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DEA243C0257F45A9002568DE /* ContentView.swift in Sources */,
+				ADEBCAC12826B99600782462 /* Network.swift in Sources */,
+				ADEBCAC32826B9C100782462 /* UserViewModel.swift in Sources */,
 				DEA243BE257F45A9002568DE /* LuftioApp.swift in Sources */,
 				DE87F62A259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */,
 				AD863DEC28057E8600FDD27A /* LuftioAPI.swift in Sources */,
+				ADEBCABF2826B98700782462 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,26 +473,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AD9C4B77281705CD00727DD8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD9C4B64281705CC00727DD8 /* LuftioMac */;
-			targetProxy = AD9C4B76281705CD00727DD8 /* PBXContainerItemProxy */;
-		};
-		AD9C4B81281705CD00727DD8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD9C4B64281705CC00727DD8 /* LuftioMac */;
-			targetProxy = AD9C4B80281705CD00727DD8 /* PBXContainerItemProxy */;
-		};
-		AD9C4B94281705FC00727DD8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DEA243B9257F45A9002568DE /* Luftio */;
-			targetProxy = AD9C4B93281705FC00727DD8 /* PBXContainerItemProxy */;
-		};
-		AD9C4B962817060000727DD8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DEA243B9257F45A9002568DE /* Luftio */;
-			targetProxy = AD9C4B952817060000727DD8 /* PBXContainerItemProxy */;
-		};
 		DEA243CD257F45AB002568DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DEA243B9257F45A9002568DE /* Luftio */;
@@ -699,148 +491,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		AD9C4B87281705CD00727DD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = LuftioMac/LuftioMac.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LuftioMac/Preview Content\"";
-				DEVELOPMENT_TEAM = KLP8YT88BM;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vacekj.LuftioMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		AD9C4B88281705CD00727DD8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = LuftioMac/LuftioMac.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LuftioMac/Preview Content\"";
-				DEVELOPMENT_TEAM = KLP8YT88BM;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vacekj.LuftioMac;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		AD9C4B89281705CD00727DD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KLP8YT88BM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vacekj.LuftioMacTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuftioMac.app/Contents/MacOS/LuftioMac";
-			};
-			name = Debug;
-		};
-		AD9C4B8A281705CD00727DD8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KLP8YT88BM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vacekj.LuftioMacTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuftioMac.app/Contents/MacOS/LuftioMac";
-			};
-			name = Release;
-		};
-		AD9C4B8B281705CD00727DD8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KLP8YT88BM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vacekj.LuftioMacUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = LuftioMac;
-			};
-			name = Debug;
-		};
-		AD9C4B8C281705CD00727DD8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KLP8YT88BM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vacekj.LuftioMacUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = LuftioMac;
-			};
-			name = Release;
-		};
 		DEA243DD257F45AB002568DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1136,33 +786,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD9C4B8D281705CD00727DD8 /* Build configuration list for PBXNativeTarget "LuftioMac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD9C4B87281705CD00727DD8 /* Debug */,
-				AD9C4B88281705CD00727DD8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD9C4B8E281705CD00727DD8 /* Build configuration list for PBXNativeTarget "LuftioMacTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD9C4B89281705CD00727DD8 /* Debug */,
-				AD9C4B8A281705CD00727DD8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD9C4B8F281705CD00727DD8 /* Build configuration list for PBXNativeTarget "LuftioMacUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD9C4B8B281705CD00727DD8 /* Debug */,
-				AD9C4B8C281705CD00727DD8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		DEA243B5257F45A9002568DE /* Build configuration list for PBXProject "Luftio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1219,6 +842,14 @@
 				version = "2.0.0-beta.2";
 			};
 		};
+		ADEBCAB72826B8B400782462 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1226,6 +857,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AD9C4B972817082200727DD8 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
+		};
+		ADEBCAB82826B8B400782462 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADEBCAB72826B8B400782462 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

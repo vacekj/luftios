@@ -19,5 +19,9 @@ final class UserViewModel: ObservableObject {
           }
         }
     }
+    
+    init() {
+            fetch()
+    }
 
 }

@@ -1,0 +1,14 @@
+query User {
+  devices {
+    id
+    color
+    data {
+      values {
+        value
+        ts
+      }
+    }
+    label
+    title
+  }
+}

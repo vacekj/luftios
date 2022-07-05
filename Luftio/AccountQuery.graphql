@@ -1,0 +1,6 @@
+query AccountQuery {
+    accounts {
+      email
+      first_name
+    }
+}

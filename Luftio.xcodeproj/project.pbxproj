@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD27728C2874A3D100C2669C /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = AD27728B2874A3D100C2669C /* Apollo */; };
+		AD27728E2874AA3A00C2669C /* AccountQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = AD27728D2874AA3A00C2669C /* AccountQuery.graphql */; };
+		AD2772902874AB1500C2669C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27728F2874AB1500C2669C /* API.swift */; };
+		AD2772922874ACFC00C2669C /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = AD2772912874ACFC00C2669C /* schema.json */; };
 		AD863DEC28057E8600FDD27A /* LuftioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD863DEB28057E8600FDD27A /* LuftioAPI.swift */; };
 		AD863DED28057F6200FDD27A /* LuftioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD863DEB28057E8600FDD27A /* LuftioAPI.swift */; };
-		AD9C4B992817082200727DD8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = AD9C4B982817082200727DD8 /* SwiftUICharts */; };
-		ADEBCAB92826B8B400782462 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = ADEBCAB82826B8B400782462 /* Apollo */; };
-		ADEBCABC2826B8FE00782462 /* User.graphql in Resources */ = {isa = PBXBuildFile; fileRef = ADEBCABB2826B8FE00782462 /* User.graphql */; };
-		ADEBCABF2826B98700782462 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBCABE2826B98700782462 /* API.swift */; };
 		ADEBCAC12826B99600782462 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBCAC02826B99600782462 /* Network.swift */; };
-		ADEBCAC32826B9C100782462 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBCAC22826B9C100782462 /* UserViewModel.swift */; };
 		DE87F62A259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */; };
 		DE87F62B259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */; };
 		DEA243BE257F45A9002568DE /* LuftioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243BD257F45A9002568DE /* LuftioApp.swift */; };
@@ -72,14 +71,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD27728D2874AA3A00C2669C /* AccountQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AccountQuery.graphql; sourceTree = "<group>"; };
+		AD27728F2874AB1500C2669C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		AD2772912874ACFC00C2669C /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		AD863DE62805708F00FDD27A /* LuftioWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LuftioWidgetExtension.entitlements; sourceTree = "<group>"; };
 		AD863DE7280570A000FDD27A /* Luftio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luftio.entitlements; sourceTree = "<group>"; };
 		AD863DEB28057E8600FDD27A /* LuftioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioAPI.swift; sourceTree = "<group>"; };
-		ADEBCABA2826B8D800782462 /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
-		ADEBCABB2826B8FE00782462 /* User.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = User.graphql; sourceTree = "<group>"; };
-		ADEBCABE2826B98700782462 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		ADEBCAC02826B99600782462 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		ADEBCAC22826B9C100782462 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		DE87F629259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ApodWidgetConfiguration.intentdefinition; sourceTree = "<group>"; };
 		DEA243BA257F45A9002568DE /* Luftio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luftio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA243BD257F45A9002568DE /* LuftioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioApp.swift; sourceTree = "<group>"; };
@@ -109,8 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9C4B992817082200727DD8 /* SwiftUICharts in Frameworks */,
-				ADEBCAB92826B8B400782462 /* Apollo in Frameworks */,
+				AD27728C2874A3D100C2669C /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,18 +164,17 @@
 		DEA243BC257F45A9002568DE /* Luftio */ = {
 			isa = PBXGroup;
 			children = (
-				ADEBCABA2826B8D800782462 /* schema.json */,
+				AD27728F2874AB1500C2669C /* API.swift */,
 				AD863DE7280570A000FDD27A /* Luftio.entitlements */,
 				DEA243BD257F45A9002568DE /* LuftioApp.swift */,
 				DEA243BF257F45A9002568DE /* ContentView.swift */,
-				ADEBCABE2826B98700782462 /* API.swift */,
+				AD2772912874ACFC00C2669C /* schema.json */,
 				DEA243C1257F45AA002568DE /* Assets.xcassets */,
 				DEA243C6257F45AA002568DE /* Info.plist */,
 				DEA243C3257F45AA002568DE /* Preview Content */,
 				AD863DEB28057E8600FDD27A /* LuftioAPI.swift */,
-				ADEBCABB2826B8FE00782462 /* User.graphql */,
 				ADEBCAC02826B99600782462 /* Network.swift */,
-				ADEBCAC22826B9C100782462 /* UserViewModel.swift */,
+				AD27728D2874AA3A00C2669C /* AccountQuery.graphql */,
 			);
 			path = Luftio;
 			sourceTree = "<group>";
@@ -260,8 +256,7 @@
 			);
 			name = Luftio;
 			packageProductDependencies = (
-				AD9C4B982817082200727DD8 /* SwiftUICharts */,
-				ADEBCAB82826B8B400782462 /* Apollo */,
+				AD27728B2874A3D100C2669C /* Apollo */,
 			);
 			productName = Apod;
 			productReference = DEA243BA257F45A9002568DE /* Luftio.app */;
@@ -355,8 +350,7 @@
 			);
 			mainGroup = DEA243B1257F45A9002568DE;
 			packageReferences = (
-				AD9C4B972817082200727DD8 /* XCRemoteSwiftPackageReference "ChartView" */,
-				ADEBCAB72826B8B400782462 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				AD27728A2874A3D100C2669C /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = DEA243BB257F45A9002568DE /* Products */;
 			projectDirPath = "";
@@ -375,7 +369,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADEBCABC2826B8FE00782462 /* User.graphql in Resources */,
+				AD27728E2874AA3A00C2669C /* AccountQuery.graphql in Resources */,
+				AD2772922874ACFC00C2669C /* schema.json in Resources */,
 				DEA243C5257F45AA002568DE /* Preview Assets.xcassets in Resources */,
 				DEA243C2257F45AA002568DE /* Assets.xcassets in Resources */,
 			);
@@ -411,7 +406,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		ADEBCABD2826B93300782462 /* Apollo Codegen */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -425,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -436,11 +431,10 @@
 			files = (
 				DEA243C0257F45A9002568DE /* ContentView.swift in Sources */,
 				ADEBCAC12826B99600782462 /* Network.swift in Sources */,
-				ADEBCAC32826B9C100782462 /* UserViewModel.swift in Sources */,
 				DEA243BE257F45A9002568DE /* LuftioApp.swift in Sources */,
 				DE87F62A259321E600B43B0F /* ApodWidgetConfiguration.intentdefinition in Sources */,
+				AD2772902874AB1500C2669C /* API.swift in Sources */,
 				AD863DEC28057E8600FDD27A /* LuftioAPI.swift in Sources */,
-				ADEBCABF2826B98700782462 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +536,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -597,7 +592,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -619,13 +615,17 @@
 				DEVELOPMENT_TEAM = KLP8YT88BM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Luftio/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.luftioios.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -643,13 +643,17 @@
 				DEVELOPMENT_TEAM = KLP8YT88BM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Luftio/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.luftioios.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -834,33 +838,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AD9C4B972817082200727DD8 /* XCRemoteSwiftPackageReference "ChartView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
-			requirement = {
-				kind = exactVersion;
-				version = "2.0.0-beta.2";
-			};
-		};
-		ADEBCAB72826B8B400782462 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+		AD27728A2874A3D100C2669C /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.5;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AD9C4B982817082200727DD8 /* SwiftUICharts */ = {
+		AD27728B2874A3D100C2669C /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AD9C4B972817082200727DD8 /* XCRemoteSwiftPackageReference "ChartView" */;
-			productName = SwiftUICharts;
-		};
-		ADEBCAB82826B8B400782462 /* Apollo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ADEBCAB72826B8B400782462 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			package = AD27728A2874A3D100C2669C /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
 		};
 /* End XCSwiftPackageProductDependency section */

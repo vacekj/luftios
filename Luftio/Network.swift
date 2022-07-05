@@ -5,12 +5,12 @@
 //  Created by Josef Vacek on 07.05.2022.
 //
 
-import Foundation
 import Apollo
+import Foundation
 
 class Network {
-  static let shared = Network()
-  
+    static let shared = Network()
+
     private(set) lazy var apollo: ApolloClient = {
         let client = URLSessionClient()
         let cache = InMemoryNormalizedCache()
@@ -36,15 +36,16 @@ class TokenAddingInterceptor: ApolloInterceptor {
         chain: RequestChain,
         request: HTTPRequest<Operation>,
         response: HTTPResponse<Operation>?,
-        completion: @escaping (Result<GraphQLResult<Operation.Data>, Error>) -> Void) {
+        completion: @escaping (Result<GraphQLResult<Operation.Data>, Error>) -> Void)
+    {
+        if let token = UserDefaults(suiteName: "group.vacekj")!.string(forKey: "web_token") {
+            request.addHeader(name: "X-Authorization", value: "\(token)")
+        } else {
+            print("Attempted fetch without user token!")
+        }
 
-            
-            if let token = UserDefaults(suiteName: "group.vacekj")!.string(forKey: "web_token") {
-                request.addHeader(name: "X-Authorization", value: "Bearer \(token)")
-            } // else do nothing
-
-            chain.proceedAsync(request: request,
-                               response: response,
-                               completion: completion)
+        chain.proceedAsync(request: request,
+                           response: response,
+                           completion: completion)
     }
 }

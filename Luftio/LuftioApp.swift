@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct LuftioApp: App {
-    @StateObject var launchViewModel = UserViewModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(launchViewModel)
         }
     }
 }

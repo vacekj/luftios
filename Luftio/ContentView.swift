@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SwiftUICharts
+import Charts
 import WidgetKit
 
 struct ContentView: View {
@@ -23,14 +23,13 @@ struct ContentView: View {
                         Text("ppm").font(.footnote)
                     }
                     Button("Refresh") {
-                        try? LuftioAirQualityProvider.getTimeSeriesFromApi(from: Calendar.current.date(byAdding: .day, value: -30, to: Date.now)!, to: Date.now) { res in
-                            switch res {
-                            case .Success(let timeseries):
-                                data = timeseries
-                                chartData = data.co2.map { Double($0.value) ?? 0 }
-                            case .Failure:
-                                print("fail")
-                            }
+                        Network.shared.apollo.fetch(query: AccountQueryQuery()) { result in
+                          switch result {
+                          case .success(let graphQLResult):
+                            print("Success! Result: \(graphQLResult)")
+                          case .failure(let error):
+                            print("Failure! Error: \(error)")
+                          }
                         }
                     }
                 }
@@ -42,14 +41,13 @@ struct ContentView: View {
                     Image(systemName: "gear")
                 }
             }.onAppear {
-                try? LuftioAirQualityProvider.getTimeSeriesFromApi(from: Calendar.current.date(byAdding: .day, value: -3, to: Date.now)!, to: Date.now) { res in
-                    switch res {
-                    case .Success(let timeseries):
-                        data = timeseries
-                        chartData = data.co2.map { Double($0.value) ?? 0 }
-                    case .Failure:
-                        print("fail")
-                    }
+                Network.shared.apollo.fetch(query: AccountQueryQuery()) { result in
+                  switch result {
+                  case .success(let graphQLResult):
+                    print("Success! Result: \(graphQLResult)")
+                  case .failure(let error):
+                      print("Failure! Error: \(error)")
+                  }
                 }
             }
         }.navigationViewStyle(StackNavigationViewStyle())

@@ -5,17 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apollographql/apollo-ios.git",
       "state" : {
-        "revision" : "08a41bad4ebf76ae8e4efebf26862a42084b7786",
-        "version" : "0.51.2"
-      }
-    },
-    {
-      "identity" : "chartview",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AppPear/ChartView",
-      "state" : {
-        "revision" : "caa75ecbc0d68f2b50d714909566406f80214186",
-        "version" : "2.0.0-beta.2"
+        "branch" : "main",
+        "revision" : "c0a8ce3951a8408c2e3586f13a76950a7e95922d"
       }
     },
     {

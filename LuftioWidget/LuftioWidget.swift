@@ -57,7 +57,7 @@ struct ApodWidgetEntryView: View {
                     Text("\(entry.value)").font(.title)
                     Text("ppm").font(.footnote)
                 }
-                Text(entry.date.timeAgoDisplay()).font(.footnote)
+                Text(entry.date.formatted()).font(.footnote)
             }.foregroundColor(entry.value > 1000 ? .white : .black)
         }
     }

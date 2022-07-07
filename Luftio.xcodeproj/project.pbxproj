@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AD27728C2874A3D100C2669C /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = AD27728B2874A3D100C2669C /* Apollo */; };
-		AD27728E2874AA3A00C2669C /* AccountQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = AD27728D2874AA3A00C2669C /* AccountQuery.graphql */; };
+		AD27728E2874AA3A00C2669C /* Account.graphql in Resources */ = {isa = PBXBuildFile; fileRef = AD27728D2874AA3A00C2669C /* Account.graphql */; };
 		AD2772902874AB1500C2669C /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27728F2874AB1500C2669C /* API.swift */; };
 		AD2772922874ACFC00C2669C /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = AD2772912874ACFC00C2669C /* schema.json */; };
+		AD2772942874BF6B00C2669C /* Devices.graphql in Resources */ = {isa = PBXBuildFile; fileRef = AD2772932874BF6B00C2669C /* Devices.graphql */; };
+		AD2772972874C3A900C2669C /* Model3DView in Frameworks */ = {isa = PBXBuildFile; productRef = AD2772962874C3A900C2669C /* Model3DView */; };
+		AD27729B2874C52200C2669C /* scene.gltf in Resources */ = {isa = PBXBuildFile; fileRef = AD2772982874C52200C2669C /* scene.gltf */; };
+		AD27729F2874CA5800C2669C /* scene.bin in Resources */ = {isa = PBXBuildFile; fileRef = AD27729E2874CA5700C2669C /* scene.bin */; };
 		AD863DEC28057E8600FDD27A /* LuftioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD863DEB28057E8600FDD27A /* LuftioAPI.swift */; };
 		AD863DED28057F6200FDD27A /* LuftioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD863DEB28057E8600FDD27A /* LuftioAPI.swift */; };
 		ADEBCAC12826B99600782462 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEBCAC02826B99600782462 /* Network.swift */; };
@@ -26,7 +30,7 @@
 		DEA243F4257F45B8002568DE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA243F3257F45B8002568DE /* SwiftUI.framework */; };
 		DEA243F7257F45B8002568DE /* LuftioWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA243F6257F45B8002568DE /* LuftioWidget.swift */; };
 		DEA243FA257F45B8002568DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA243F9257F45B8002568DE /* Assets.xcassets */; };
-		DEA24400257F45B8002568DE /* LuftioWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEA243EF257F45B7002568DE /* LuftioWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DEA24400257F45B8002568DE /* LuftioWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DEA243EF257F45B7002568DE /* LuftioWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DEA2440D257F4710002568DE /* Test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEA2440A257F4710002568DE /* Test.jpg */; };
 		DEA2440E257F4710002568DE /* Error.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA2440B257F4710002568DE /* Error.png */; };
 		DEA2440F257F4710002568DE /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA2440C257F4710002568DE /* Placeholder.png */; };
@@ -57,23 +61,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DEA24404257F45B8002568DE /* Embed App Extensions */ = {
+		DEA24404257F45B8002568DE /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DEA24400257F45B8002568DE /* LuftioWidgetExtension.appex in Embed App Extensions */,
+				DEA24400257F45B8002568DE /* LuftioWidgetExtension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AD27728D2874AA3A00C2669C /* AccountQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = AccountQuery.graphql; sourceTree = "<group>"; };
+		AD27728D2874AA3A00C2669C /* Account.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Account.graphql; sourceTree = "<group>"; };
 		AD27728F2874AB1500C2669C /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		AD2772912874ACFC00C2669C /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		AD2772932874BF6B00C2669C /* Devices.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Devices.graphql; sourceTree = "<group>"; };
+		AD2772982874C52200C2669C /* scene.gltf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene.gltf; sourceTree = "<group>"; };
+		AD27729E2874CA5700C2669C /* scene.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = scene.bin; sourceTree = "<group>"; };
 		AD863DE62805708F00FDD27A /* LuftioWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LuftioWidgetExtension.entitlements; sourceTree = "<group>"; };
 		AD863DE7280570A000FDD27A /* Luftio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luftio.entitlements; sourceTree = "<group>"; };
 		AD863DEB28057E8600FDD27A /* LuftioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftioAPI.swift; sourceTree = "<group>"; };
@@ -107,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2772972874C3A900C2669C /* Model3DView in Frameworks */,
 				AD27728C2874A3D100C2669C /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +172,8 @@
 		DEA243BC257F45A9002568DE /* Luftio */ = {
 			isa = PBXGroup;
 			children = (
+				AD2772982874C52200C2669C /* scene.gltf */,
+				AD27729E2874CA5700C2669C /* scene.bin */,
 				AD27728F2874AB1500C2669C /* API.swift */,
 				AD863DE7280570A000FDD27A /* Luftio.entitlements */,
 				DEA243BD257F45A9002568DE /* LuftioApp.swift */,
@@ -174,7 +184,8 @@
 				DEA243C3257F45AA002568DE /* Preview Content */,
 				AD863DEB28057E8600FDD27A /* LuftioAPI.swift */,
 				ADEBCAC02826B99600782462 /* Network.swift */,
-				AD27728D2874AA3A00C2669C /* AccountQuery.graphql */,
+				AD27728D2874AA3A00C2669C /* Account.graphql */,
+				AD2772932874BF6B00C2669C /* Devices.graphql */,
 			);
 			path = Luftio;
 			sourceTree = "<group>";
@@ -247,7 +258,7 @@
 				DEA243B6257F45A9002568DE /* Sources */,
 				DEA243B7257F45A9002568DE /* Frameworks */,
 				DEA243B8257F45A9002568DE /* Resources */,
-				DEA24404257F45B8002568DE /* Embed App Extensions */,
+				DEA24404257F45B8002568DE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -257,6 +268,7 @@
 			name = Luftio;
 			packageProductDependencies = (
 				AD27728B2874A3D100C2669C /* Apollo */,
+				AD2772962874C3A900C2669C /* Model3DView */,
 			);
 			productName = Apod;
 			productReference = DEA243BA257F45A9002568DE /* Luftio.app */;
@@ -322,7 +334,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					DEA243B9257F45A9002568DE = {
 						CreatedOnToolsVersion = 12.2;
@@ -351,6 +363,7 @@
 			mainGroup = DEA243B1257F45A9002568DE;
 			packageReferences = (
 				AD27728A2874A3D100C2669C /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				AD2772952874C3A800C2669C /* XCRemoteSwiftPackageReference "Model3DView" */,
 			);
 			productRefGroup = DEA243BB257F45A9002568DE /* Products */;
 			projectDirPath = "";
@@ -369,10 +382,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD27728E2874AA3A00C2669C /* AccountQuery.graphql in Resources */,
+				AD27728E2874AA3A00C2669C /* Account.graphql in Resources */,
 				AD2772922874ACFC00C2669C /* schema.json in Resources */,
 				DEA243C5257F45AA002568DE /* Preview Assets.xcassets in Resources */,
 				DEA243C2257F45AA002568DE /* Assets.xcassets in Resources */,
+				AD2772942874BF6B00C2669C /* Devices.graphql in Resources */,
+				AD27729F2874CA5800C2669C /* scene.bin in Resources */,
+				AD27729B2874C52200C2669C /* scene.gltf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,6 +862,14 @@
 				kind = branch;
 			};
 		};
+		AD2772952874C3A800C2669C /* XCRemoteSwiftPackageReference "Model3DView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/frzi/Model3DView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -853,6 +877,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AD27728A2874A3D100C2669C /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
+		};
+		AD2772962874C3A900C2669C /* Model3DView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD2772952874C3A800C2669C /* XCRemoteSwiftPackageReference "Model3DView" */;
+			productName = Model3DView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

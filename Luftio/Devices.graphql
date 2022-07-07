@@ -1,0 +1,8 @@
+query Devices {
+  devices {
+    id
+    label
+    title
+    color
+  }
+}
